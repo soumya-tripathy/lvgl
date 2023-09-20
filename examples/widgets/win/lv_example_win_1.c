@@ -7,6 +7,10 @@ static void event_handler(lv_event_t * e)
     lv_obj_t * obj = lv_event_get_target(e);
     LV_UNUSED(obj);
     LV_LOG_USER("Button %d clicked", (int)lv_obj_get_index(obj));
+    if(obj!=NULL)
+    {
+        obj =NULL;
+    }
 }
 
 void lv_example_win_1(void)
